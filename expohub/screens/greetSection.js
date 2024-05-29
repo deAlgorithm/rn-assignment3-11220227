@@ -1,7 +1,44 @@
 import React from "react";
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 const Greet = () => {
-    
+    return(
+        <View style={styles.container}>
+            <View style={styles.textContainer}>
+                <Text style={styles.greetText}>Hello, Devs</Text>
+                <Text>15 Tasks Today</Text>
+            </View>
+            <View style={styles.imageContainer}>
+                <Image
+                    source={require('../assets/usericon.jpeg')}
+                    style={styles.image}
+                />
+            </View>
+        </View>
+    )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+    },
+    textContainer: {
+        alignItems: 'center',
+    },
+    greetText:{
+        fontSize: 30,
+    },
+   
+    imageContainer: {
+        marginTop: 20,
+    },
+    image: {
+        width: 100, 
+        height: 100,
+    }
+});
+
 export default Greet;
