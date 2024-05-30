@@ -5,7 +5,7 @@ const Greet = () => {
     return(
         <View style={styles.container}>
             <View style={styles.textContainer}>
-                <Text style={styles.greetText}>Hello, Devs</Text>
+                <Text style={styles.greetText}>Hello, Mendy</Text>
                 <Text style={styles.taskNumber}>15 Tasks Today</Text>
             </View>
             <View style={styles.imageContainer}>
@@ -33,9 +33,11 @@ const styles = StyleSheet.create({
     greetText:{
         fontSize: 50,
         fontWeight : 'bold',
+        color : 'white',
+        fontFamily : 'monospace',
     },
     taskNumber:{
-        marginLeft : -50,
+        marginLeft : -150,
         fontSize : 20,
     },
     imageContainer: {
@@ -44,6 +46,8 @@ const styles = StyleSheet.create({
     image: {
         width: 100, 
         height: 100,
+        borderRadius: 50,
+        
     }
 });
 
