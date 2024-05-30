@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import Cartegories from './screens/cartegoriesSection';
 import Greet from './screens/greetSection';
 import Search from './screens/searchSection';
 import Tasks from './screens/taskSection';
+import Cartegory from './screens/cartegory';
+
 
 export default function App() {
   return (
@@ -11,7 +12,8 @@ export default function App() {
       <View style={styles.container}>
         <Greet/>
         <Search/>
-        <Cartegories/>
+        <Text style={styles.cartTitle}>Cartegories</Text>
+        <Cartegory/>
         <Tasks/>
         
         <StatusBar style="auto" />
@@ -30,4 +32,7 @@ const styles = StyleSheet.create({
     padding: 10,
     
   },
+  cartTitle:{
+    fontSize: 35,
+  }
 });
