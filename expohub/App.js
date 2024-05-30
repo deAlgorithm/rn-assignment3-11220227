@@ -23,7 +23,7 @@ export default function App() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#fefefe',
+    backgroundColor: '#f0f0f0',
   },
   container: {
     flex: 1,
