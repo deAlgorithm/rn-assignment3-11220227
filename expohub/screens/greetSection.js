@@ -6,7 +6,7 @@ const Greet = () => {
         <View style={styles.container}>
             <View style={styles.textContainer}>
                 <Text style={styles.greetText}>Hello, Devs</Text>
-                <Text>15 Tasks Today</Text>
+                <Text style={styles.taskNumber}>15 Tasks Today</Text>
             </View>
             <View style={styles.imageContainer}>
                 <Image
@@ -20,18 +20,24 @@ const Greet = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 0,
+        padding : 10,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
+    
     },
     textContainer: {
         alignItems: 'center',
     },
     greetText:{
-        fontSize: 30,
+        fontSize: 50,
+        fontWeight : 'bold',
     },
-   
+    taskNumber:{
+        marginLeft : -50,
+        fontSize : 20,
+    },
     imageContainer: {
         marginTop: 20,
     },
