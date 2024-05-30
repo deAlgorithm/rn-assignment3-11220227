@@ -31,7 +31,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     greetText:{
-        fontSize: 50,
+        fontSize: 40,
         fontWeight : 'bold',
         color : 'white',
         fontFamily : 'monospace',
