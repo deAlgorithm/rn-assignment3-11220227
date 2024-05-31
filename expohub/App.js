@@ -8,20 +8,20 @@ import Cartegory from './screens/cartegory';
 export default function App() {
   return (
    
-      <ScrollView>
-         <SafeAreaView style={styles.safeArea}>
-         <View style={styles.container}>
-        <Greet/>
-        <Search/>
-        <Text style={styles.Title}>Cartegories</Text>
-        <Cartegory/>
-        <Text style={styles.Title}>Ongoing Tasks</Text>
-        <Tasks/>
-        
-        <StatusBar style="auto" />
-      </View>
+      
+      <SafeAreaView style={styles.safeArea}>
+          <View style={styles.container}>
+              <Greet/>
+              <Search/>
+              <Text style={styles.Title}>Cartegories</Text>
+              <Cartegory/>
+              <Text style={styles.Title}>Ongoing Tasks</Text>
+              <Tasks/>
+              
+              <StatusBar style="auto" />
+          </View>
       </SafeAreaView>
-      </ScrollView>
+    
      
  
   );
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     
   },
   Title:{
-    fontSize: 35,
+    fontSize: 25,
     fontFamily: 'monospace',
   }
 });

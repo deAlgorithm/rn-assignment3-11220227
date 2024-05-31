@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         fontFamily : 'monospace',
     },
     taskNumber:{
-        marginLeft : -150,
+        marginLeft : -130,
         fontSize : 20,
     },
     imageContainer: {

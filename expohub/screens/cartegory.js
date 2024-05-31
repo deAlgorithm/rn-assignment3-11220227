@@ -16,7 +16,7 @@ const Category = () => {
 
   return (
     <View style={styles.container}>
-      <ScrollView horizontal={true}>
+      <ScrollView  horizontal={true}>
         {categories.map((category, index) => (
           <View style={styles.card} key={index}>
             <Text style={styles.title}>{category.title}</Text>
@@ -40,16 +40,17 @@ const styles = StyleSheet.create({
     marginRight: 20,
     backgroundColor: '#ffffff',
     borderRadius: 30,
-    padding: 20,
+    padding: 15,
     shadowColor: '#fefefe',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+   
   },
   image: {
-    width: 200,
-    height: 200,
+    width: 150,
+    height: 150,
     borderRadius: 10,
     marginBottom: 10,
   },

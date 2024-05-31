@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FlatList, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
 
 const Tasks = () => {
   const [ongoingTasks, setOngoingTasks] = useState([
@@ -39,7 +38,6 @@ const Tasks = () => {
       ]}
       onPress={() => setSelectedTask(item)}
     >
-      <View style={styles.priorityIndicator(item.priority)} />
       <Text style={styles.title}>{item.title}</Text>
       <TouchableOpacity
         style={styles.checkboxContainer}
@@ -64,10 +62,7 @@ const Tasks = () => {
       />
       {selectedTask && (
         <View style={styles.taskDetailsModal}>
-          <LinearGradient
-            colors={['#ffffff', '#f0f0f0']}
-            style={styles.taskDetailsContainer}
-          >
+          <View style={styles.taskDetailsContainer}>
             <Text style={styles.taskDetailsTitle}>{selectedTask.title}</Text>
             <Text style={styles.taskDetailsText}>
               Priority: {selectedTask.priority}
@@ -84,7 +79,7 @@ const Tasks = () => {
             >
               <Text style={styles.taskDetailsCloseButtonText}>Close</Text>
             </TouchableOpacity>
-          </LinearGradient>
+          </View>
         </View>
       )}
     </View>
@@ -102,25 +97,13 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     backgroundColor: '#ffffff',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height:  0},
+    shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.3,
     shadowRadius: 1,
     elevation: 2,
     flexDirection: 'row',
     alignItems: 'center',
   },
-  priorityIndicator: (priority) => ({
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-    backgroundColor:
-      priority === 'high'
-        ? '#ff6b6b'
-        : priority === 'medium'
-        ? '#ffa500'
-        : '#7CFC00',
-    marginRight: 10,
-  }),
   title: {
     fontSize: 18,
     fontFamily: 'sans-serif-condensed',
