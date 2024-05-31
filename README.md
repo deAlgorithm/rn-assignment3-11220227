@@ -30,6 +30,9 @@ The application includes at least eight categories and a list of 15 ongoing task
 
 Here are the screenshot of the completed application:
 
+![app](https://github.com/deAlgorithm/rn-assignment3-11220227/assets/131563995/af150fbb-389e-4a0e-80c5-adb2f2d5b880)
+
+
 
 ## Installation
 
